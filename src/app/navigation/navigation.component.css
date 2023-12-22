@@ -1,0 +1,67 @@
+:host {
+    display: block;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.main-buttons {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.category-dropdown button {
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.category-dropdown button:hover {
+    background-color: #f0f0f0;
+}
+
+.sub-category-dropdown {
+    display: flex;
+  }
+
+
+.sub-category-dropdown button {
+    margin-right: 0.5rem;
+    padding: 0.3rem 0.7rem; /* Adjust size for smaller buttons */
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #e0e0e0; /* Different background color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sub-category-dropdown button:hover {
+    background-color: #d0d0d0;
+}
+
+nav button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    /* background-color: #fff; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #F2F2F2;
+}
+
+nav button:hover {
+    background-color: #f0f0f0;
+}
+
+.filterFavorites {
+    background-color: blue;
+}

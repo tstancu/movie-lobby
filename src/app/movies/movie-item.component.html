@@ -1,0 +1,15 @@
+<div class="movie-item">
+    <div class="ribbon" (click)="onToggleFavorite()" [class.favorite]="isFavorite">+</div>
+    <div class="content">
+        <div class="wrapper-image">
+            <ng-container *ngIf="movie?.poster_path">
+                <img class="movie-image" [src]="movie?.poster_path | fullPosterPath" alt="{{ movie?.title}}" />
+            </ng-container>
+        </div>
+        <div class="wrapper-text">
+            <h4>{{ movie?.title }}</h4>
+            <p class="release-date">{{ movie?.release_date }}</p>
+        </div>
+    </div>
+</div>
+  

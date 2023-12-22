@@ -1,0 +1,9 @@
+<nav>
+    <div class="main-buttons">
+        <button (click)="toggleCategoryDropdown()">Movie Category</button>
+        <button (click)="onClickFavorites()" [class.filterFavorites]="clickedFavorites">Favourite Movies</button>
+    </div>
+        <div *ngIf="showCategoryDropdown" class="sub-category-dropdown">
+            <button *ngFor="let category of movieCategories" (click)="switchCategory(category)">{{category}}</button>
+        </div>
+</nav>

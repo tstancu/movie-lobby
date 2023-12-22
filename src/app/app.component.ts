@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'movie-app';
+  searchQuery: string = '';
+
+  showFavorites: boolean = false;
+
+  showFavoriteMovies(): void {
+    this.showFavorites = !this.showFavorites;
+  }
+
 }

@@ -1,0 +1,17 @@
+
+<div class="middle">
+    <div class="movie-grid">
+        <app-movie-item 
+            *ngFor ="let movie of filteredMovies" 
+            [movie]="movie" 
+            [isFavorite]="isFavorite(movie)"
+            (toggleFavorite)="toggleFavorite($event)">
+        </app-movie-item>
+        <div appInfiniteScroll (scrolled)="loadMoreMovies()"></div>
+        
+    </div>
+    
+    <div class="footer">
+        <button (click)="loadMoreMovies()" *ngIf="showLoadMoreButton">Next Page</button>
+    </div>
+</div>
